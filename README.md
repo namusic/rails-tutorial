@@ -1,24 +1,39 @@
-# README
+# Sample application made by RoR tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is sample application made by below material.
 
-Things you may want to cover:
+[Ruby on rails tutorial](https://railstutorial.jp/)
+Author : [Michael Hartl](http://www.michaekhartl.com/)
 
-* Ruby version
+## Licence
 
-* System dependencies
+Source code in [Ruby on rails tutorial](https://railstutorial.jp/) is opened based on MIT license anns Beerware license.
+For details, see [LICENSE.md](LICENSE.md)
 
-* Configuration
+## How to use
+To use this application, clone your local machine this repositry.
+And instaii RubyGems(this command needs to use this)
 
-* Database creation
+```
+$ bundle install --without production
+```
 
-* Database initialization
+Next, execute migration to database.
 
-* How to run the test suite
+```
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Last, check whether work this application well to execute test.
 
-* Deployment instructions
+```
+$ rails test
+```
 
-* ...
+If this test passed well, you should boot rails server.
+
+```
+$ rails server
+```
+
+For details, see [Ruby on Rails tutorial](https://railstutorial.jp/)
